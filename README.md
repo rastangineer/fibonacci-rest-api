@@ -16,6 +16,17 @@ This repository will be used to versioning the code of the solution but also as 
    * From previous personal projects I can say I'm more familiar with `node.js` and I read that `express.js` is a web framework for node.js that allows you create to REST APIs quickly. So the winner is **node.js + express.js**
 3. I'm familiar with `REST API` services, `SOAP/HTML` Web Services and similar technologies, but should I start with **design** or just start googling and try?
    * Definitively YES, that would help to **identify** the modules/functions needed.
+
+   ```mermaid
+   sequenceDiagram
+   participant C as :Client
+   participant S as :Server
+
+   C ->>+ S: GET /api/fibonacci_number (index)
+   S ->>+ S: Generate Fibonacci series
+   S -->>+ C: Response with fibonacci[n]
+   ```
+
 4. How do I **start** with something basic?
    * I like to start with the very basics, and then gradually add funcionality in a iterative and **incremental** way. Since I'm new developing REST APIs I would start with the most basic thing, the famous **Hello World**, for example an API that just replies with the text `Hello World`. 
    * Next step would be passing something like the `username` using **parameters** and reply with something like `Hello World username`.

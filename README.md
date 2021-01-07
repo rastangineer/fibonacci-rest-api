@@ -24,7 +24,7 @@ This repository will be used to versioning the code of the solution but also as 
 
    C ->>+ S: GET /api/fibonacci_number (index)
    S ->>+ S: Generate Fibonacci series
-   S -->>+ C: Response with fibonacci[n]
+   S -->>+ C: Response with fibonacci[index] value
    ```
 
 4. How do I **start** with something basic?

@@ -8,6 +8,37 @@ The Fibonacci REST API has only one single feature:
 
 This repository will be used to versioning the code of the solution but also as a journal or notebook about the process followed to implement the solution.
 
+## Try it locally
+
+Pre-reqs:
+
+* node.js
+
+#### Steps:
+
+1. Clone this repo
+
+   ```bash
+   git clone https://github.com/rastangineer/fibonacci-rest-api.git
+   cd fibonacci-rest-api
+   ```
+
+2. Install packages
+
+   ```bash
+   npm install
+   ```
+  
+3. start server locally
+
+   ```bash
+   node app.js
+   ```
+  
+4. Send requests with Postman or a similar
+
+![](2021-01-08-17-16-03.png)
+
 ## Initial challenges
 
 1. I don't consider myself a `REST API` developer, or even a developer.
@@ -34,6 +65,7 @@ This repository will be used to versioning the code of the solution but also as 
 5. Thought process?
 6. Technical decisions?
    * What is the maximun index `n` allowed.
+     * In theory, it shouldn't have a limit. So it's important to be able to handle big values for `n`.
    * Harcoded Fibonacci series? Or Fibonacci series generated on each request.
 7. Optimizations
    * After initial tests with `recursive programming` I have found that this a very time consuming method, the bigger the parameter the longer it takes to generate the fibonacci series.
@@ -42,4 +74,4 @@ This repository will be used to versioning the code of the solution but also as 
    * Alternative 2:
      * Using a while loop, by using the formula `f(n) = f(n-1) + f(n-2)` where `f(0) = 0` and `f(1) = 1` 
    * Alternative 3:
-     * How about hard-coding the fibonacci series and store it in an array, then just reply with `array[n]`, no calculations, just saying I haven't really thought about it.
+     * How about hard-coding the fibonacci series and store it in an array, then just reply with `array[n]`, no calculations. Just saying I haven't really thought about it.

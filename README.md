@@ -36,3 +36,10 @@ This repository will be used to versioning the code of the solution but also as 
    * What is the maximun index `n` allowed.
    * Harcoded Fibonacci series? Or Fibonacci series generated on each request.
 7. Optimizations
+   * After initial tests with `recursive programming` I have found that this a very time consuming method, the bigger the parameter the longer it takes to generate the fibonacci series.
+   * Alternative 1:
+     * Using the _golden ratio_ `phi ^ n / sqrt(5)`  where `phi = (1+ sqrt(5)) / 2` we might get better performance, but values might not be accurate after `n > 77`. [Reference](https://stackoverflow.com/a/42952842)
+   * Alternative 2:
+     * Using a while loop, by using the formula `f(n) = f(n-1) + f(n-2)` where `f(0) = 0` and `f(1) = 1` 
+   * Alternative 3:
+     * How about hard-coding the fibonacci series and store it in an array, then just reply with `array[n]`, no calculations, just saying I haven't really thought about it.

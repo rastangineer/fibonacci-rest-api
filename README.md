@@ -51,7 +51,7 @@ Pre-reqs:
 
      ![diagram](images/diagram.png)
 
-   <!-- ```mermaid
+   ```mermaid
    sequenceDiagram
    participant C as :Client
    participant S as :Server
@@ -59,9 +59,6 @@ Pre-reqs:
    C ->>+ S: GET /api/fibonacci_number (index)
    S ->>+ S: Generate Fibonacci series
    S -->>+ C: Response with fibonacci[index] value
-
-   ```-->
-
    ```
 
 4. How do I **start** with something basic?

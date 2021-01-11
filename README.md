@@ -37,7 +37,7 @@ Pre-reqs:
 
 4. Send requests with Postman or a similar
 
-![](images/postman.png)
+   ![postman](images/postman.png)
 
 ## Initial challenges
 
